@@ -12,7 +12,7 @@ public partial class ListPage : ContentPage
 	async void OnSaveButtonClicked(object sender, EventArgs e)
 	{
 		var slist = (ShopList)BindingContext;
-		slist.Date= DateTime.UtcNow;
+		slist.Date = DateTime.UtcNow;
 		await App.Databse.SaveShopListAsync(slist);
 		await Navigation.PopAsync();
 	}
@@ -23,4 +23,25 @@ public partial class ListPage : ContentPage
 		await App.Databse.DeleteShopListAsync(slist);
 		await Navigation.PopAsync();
 	}
+	async void OnChooseButtonClicked(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new ProductPage((ShopList)
+	   this.BindingContext)
+		{
+			BindingContext = new Product()
+		});
+
+	}
+
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        var shopl = (ShopList)BindingContext;
+
+        listView.ItemsSource = await App.Databse.GetListProductsAsync(shopl.ID);
+    }
+
+
 }
+
+
