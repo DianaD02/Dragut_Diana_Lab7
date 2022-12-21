@@ -13,7 +13,11 @@ public partial class ListPage : ContentPage
 	{
 		var slist = (ShopList)BindingContext;
 		slist.Date = DateTime.UtcNow;
-		await App.Databse.SaveShopListAsync(slist);
+
+        Shop selectedShop = (ShopPicker.SelectedItem as Shop);
+        slist.ShopID = selectedShop.ID;
+
+        await App.Databse.SaveShopListAsync(slist);
 		await Navigation.PopAsync();
 	}
 
@@ -36,6 +40,11 @@ public partial class ListPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
+
+        var items = await App.Databse.GetShopsAsync();
+        ShopPicker.ItemsSource = (System.Collections.IList)items;
+        ShopPicker.ItemDisplayBinding = new Binding("ShopDetails");
+
         var shopl = (ShopList)BindingContext;
 
         listView.ItemsSource = await App.Databse.GetListProductsAsync(shopl.ID);
