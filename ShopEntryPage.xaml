@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dragut_Diana_Lab7.ShopEntryPage"
              Title="ShopEntryPage">
+   
     
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add Shop"
@@ -11,11 +12,14 @@
     
     <ListView x:Name="listView"
               Margin="20"
-              ItemSelected="OnListViewItemSelected">
+              ItemSelected="OnListViewItemSelected"
+              >
+       
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding ShopName}"
-                          Detail="{Binding Adress}" />
+                          Detail="{Binding Adress}" 
+                          TextColor="White"/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

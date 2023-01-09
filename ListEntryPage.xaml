@@ -13,7 +13,8 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding Description}"
-                          Detail="{Binding Date}" />
+                          Detail="{Binding Date}" 
+                          TextColor="White"/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

@@ -78,6 +78,10 @@ namespace Dragut_Diana_Lab7.Data
                 return _database.InsertAsync(listp);
             }
         }
+        public Task<int> DeleteListProductAsync(ListProduct listp)
+        {
+            return _database.DeleteAsync(listp);
+        }
         public Task<List<Product>> GetListProductsAsync(int shoplistid)
         {
             return _database.QueryAsync<Product>(

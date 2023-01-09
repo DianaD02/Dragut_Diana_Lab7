@@ -26,8 +26,10 @@ public partial class ListPage : ContentPage
 		var slist = (ShopList)BindingContext;
 		await App.Databse.DeleteShopListAsync(slist);
 		await Navigation.PopAsync();
-	}
-	async void OnChooseButtonClicked(object sender, EventArgs e)
+       ;
+    }
+    
+    async void OnChooseButtonClicked(object sender, EventArgs e)
 	{
 		await Navigation.PushAsync(new ProductPage((ShopList)
 	   this.BindingContext)
@@ -37,17 +39,20 @@ public partial class ListPage : ContentPage
 
 	}
 
+	
+
     protected override async void OnAppearing()
     {
         base.OnAppearing();
 
         var items = await App.Databse.GetShopsAsync();
-        ShopPicker.ItemsSource = (System.Collections.IList)items;
+        ShopPicker.ItemsSource = items;
         ShopPicker.ItemDisplayBinding = new Binding("ShopDetails");
 
         var shopl = (ShopList)BindingContext;
 
         listView.ItemsSource = await App.Databse.GetListProductsAsync(shopl.ID);
+		
     }
 
 
