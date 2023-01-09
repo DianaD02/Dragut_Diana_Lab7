@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dragut_Hanc_Mobil.ContactPage"
+              Title="Sephora"
+             BackgroundImageSource="https://img.freepik.com/free-photo/white-crumpled-paper-background-simple-diy-craft_53876-128183.jpg?w=2000"
+             >
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Image Source="https://community.sephora.com/t5/image/serverpage/image-id/2044330i9B6871AC7DFC1671?v=v2"
+                   Grid.Row="0"
+                   Aspect="Center" 
+                   SemanticProperties.Description="Contact"
+                   VerticalOptions="StartAndExpand" 
+                   MaximumWidthRequest="1000"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <Image Source="https://community.sephora.com/t5/image/serverpage/image-id/278748i84E59F5D5788283C?v=v2"
+                   Grid.Row="1"
+                   Aspect="Center"
+                   SemanticProperties.Description="Contact"
+                   HeightRequest="460" 
+                   VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+
+            <Image Source="https://images.milledcdn.com/2016-01-31/i-hiykReEToAMqq7/iRKXS3ixbfS3.gif"
+                   Grid.Row="2"
+                   Aspect="Center"
+                   SemanticProperties.Description="Contact"
+                   HeightRequest="1000"
+                   VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>

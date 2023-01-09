@@ -26,8 +26,8 @@ public partial class ShopPage : ContentPage
             Name = "Magazinul meu preferat"
         };
         var location = locations?.FirstOrDefault();
-        // var myLocation = await Geolocation.GetLocationAsync();
-        var myLocation = new Location(46.7731796289, 23.6213886738);
+        var myLocation = await Geolocation.GetLocationAsync();
+       /// var myLocation = new Location(46.7731796289, 23.6213886738);
         var distance = myLocation.CalculateDistance(location, DistanceUnits.Kilometers);
         if (distance < 4)
         {

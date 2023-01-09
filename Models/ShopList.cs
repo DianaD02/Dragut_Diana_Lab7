@@ -21,6 +21,7 @@ namespace Dragut_Hanc_Mobil.Models
 
         [ForeignKey(typeof(Shop))]
         public int ShopID { get; set; }
+        public string ShopName { get; set; }
 
     }
 }

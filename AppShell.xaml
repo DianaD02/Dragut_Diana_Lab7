@@ -14,17 +14,17 @@
         
         <ShellContent
             Title="My Shopping Lists"
-            ContentTemplate="{DataTemplate local:ListEntryPage}"
-            />
+            ContentTemplate="{DataTemplate local:ListEntryPage}" />
 
         <ShellContent
             Title="My Shops"
-            ContentTemplate="{DataTemplate local:ShopEntryPage}"
-            />
+            ContentTemplate="{DataTemplate local:ShopEntryPage}" />
+        <ShellContent
+            Title="Contact"
+            ContentTemplate="{DataTemplate local:ContactPage}" />
 
         <ShellContent
             Title="About"
-            ContentTemplate="{DataTemplate local:AboutPage}"
-            />
+            ContentTemplate="{DataTemplate local:AboutPage}" />
     </TabBar>
 </Shell>

@@ -2,16 +2,16 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dragut_Hanc_Mobil.AboutPage"
-             Title="Sephora"
+            Title="Sephora"
              BackgroundImageSource="https://img.freepik.com/free-photo/white-crumpled-paper-background-simple-diy-craft_53876-128183.jpg?w=2000"
              >
     <ScrollView>
-        <VerticalStackLayout Spacing="20" Margin="30">
+        <VerticalStackLayout Spacing="30" Margin="50">
             <StackLayout Spacing="20">
-                <Image Source="about.jpg"
+                <Image Source="https://media.voguebusiness.com/photos/63653a476ffbd143aeb83d89/16:9/w_1280,c_limit/sephora-voguebus-photographer-month-22-social-newsletter.jpg"
                    Aspect="Center"
                    SemanticProperties.Description="About"
-                   HeightRequest="500" WidthRequest="1000" />
+                   HeightRequest="500" WidthRequest="1500" />
 
                 <Label FontSize="30" TextColor='Black' FontAttributes="Bold" HorizontalOptions="Center"  Text="This is us" VerticalOptions="End" />
                 <Label FontSize="14" TextColor="Black" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Start"

@@ -2,21 +2,33 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dragut_Hanc_Mobil.ListEntryPage"
-             Title="ListEntryPage">
+             Title="Sephora"
+             BackgroundImageSource="https://img.freepik.com/free-photo/white-crumpled-paper-background-simple-diy-craft_53876-128183.jpg?w=2000"
+             >
+             
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add Shopping List"
                      Clicked="OnShopListAddedClicked" />
     </ContentPage.ToolbarItems>
-    <ListView x:Name="listView"
+    <VerticalStackLayout>
+        <Label FontSize="25" TextColor="Black" HorizontalOptions="Center" VerticalTextAlignment="Center"  
+               Text="Think of a product?" />
+        <Label FontSize="25" TextColor="Black" HorizontalOptions="Center" VerticalTextAlignment="Center" 
+               Text="Create a shoplist so you don't lose it!" />
+        <ListView x:Name="listView"
               Margin="20"
               ItemSelected="OnListViewItemSelected">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <TextCell Text="{Binding Description}"
-                          Detail="{Binding Date}" 
-                          TextColor="White"/>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
-    
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Description}" 
+                              Detail="{Binding Date}" 
+                            
+                          DetailColor="Black" 
+                          TextColor="Black"/>
+                </DataTemplate>
+               
+
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
 </ContentPage>
