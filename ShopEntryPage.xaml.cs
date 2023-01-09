@@ -1,5 +1,5 @@
-using Dragut_Diana_Lab7.Models;
-namespace Dragut_Diana_Lab7;
+using Dragut_Hanc_Mobil.Models;
+namespace Dragut_Hanc_Mobil;
 public partial class ShopEntryPage : ContentPage
 {
     public ShopEntryPage()

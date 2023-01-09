@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dragut_Diana_Lab7
+namespace Dragut_Hanc_Mobil
 {
     class ValidationBehaviour : Behavior<Editor>
     {

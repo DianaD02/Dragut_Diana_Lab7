@@ -6,10 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using SQLite;
 using System.Threading.Tasks;
-using Dragut_Diana_Lab7.Models;
+using Dragut_Hanc_Mobil.Models;
 
 
-namespace Dragut_Diana_Lab7.Data
+namespace Dragut_Hanc_Mobil.Data
 {
     public class ShoppingListDatabase
     {

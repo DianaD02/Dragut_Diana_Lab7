@@ -1,7 +1,7 @@
-using Dragut_Diana_Lab7.Models;
+using Dragut_Hanc_Mobil.Models;
 using Plugin.LocalNotification;
 
-namespace Dragut_Diana_Lab7;
+namespace Dragut_Hanc_Mobil;
 
 public partial class ShopPage : ContentPage
 {

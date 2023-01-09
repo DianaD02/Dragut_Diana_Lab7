@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 
-namespace Dragut_Diana_Lab7.Models
+namespace Dragut_Hanc_Mobil.Models
 {
     public class ShopList
     {

@@ -1,4 +1,4 @@
-﻿namespace Dragut_Diana_Lab7;
+﻿namespace Dragut_Hanc_Mobil;
 
 public partial class AppShell : Shell
 {

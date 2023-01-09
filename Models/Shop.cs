@@ -1,4 +1,4 @@
-﻿using Dragut_Diana_Lab7.Models;
+﻿using Dragut_Hanc_Mobil.Models;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 using System;

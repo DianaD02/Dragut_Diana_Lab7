@@ -1,6 +1,6 @@
-using Dragut_Diana_Lab7.Models;
+using Dragut_Hanc_Mobil.Models;
 
-namespace Dragut_Diana_Lab7;
+namespace Dragut_Hanc_Mobil;
 
 public partial class ListEntryPage : ContentPage
 {

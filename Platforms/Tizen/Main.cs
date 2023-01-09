@@ -2,7 +2,7 @@ using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace Dragut_Diana_Lab7;
+namespace Dragut_Hanc_Mobil;
 
 class Program : MauiApplication
 {

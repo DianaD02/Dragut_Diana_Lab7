@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace Dragut_Diana_Lab7;
+namespace Dragut_Hanc_Mobil;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

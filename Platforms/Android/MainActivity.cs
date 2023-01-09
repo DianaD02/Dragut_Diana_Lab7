@@ -2,7 +2,7 @@
 using Android.Content.PM;
 using Android.OS;
 
-namespace Dragut_Diana_Lab7;
+namespace Dragut_Hanc_Mobil;
 
 [Activity(Theme = "@style/Maui.SplashTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize | ConfigChanges.Density)]
 public class MainActivity : MauiAppCompatActivity

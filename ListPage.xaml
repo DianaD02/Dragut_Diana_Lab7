@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-            xmlns:local="clr-namespace:Dragut_Diana_Lab7"
+            xmlns:local="clr-namespace:Dragut_Hanc_Mobil"
             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Dragut_Diana_Lab7.ListPage"
+             x:Class="Dragut_Hanc_Mobil.ListPage"
              Title="ListPage">
     <StackLayout Margin="20" BackgroundColor="Black">
         <Editor Placeholder="Enter the description of the shopping list"
@@ -35,6 +35,7 @@
             </ListView.ItemTemplate>
         </ListView>
         <Button Text="Add/Choose Item to buy" MaximumWidthRequest="300" Clicked="OnChooseButtonClicked"/>
+       
     </StackLayout>
    
     

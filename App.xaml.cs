@@ -1,8 +1,8 @@
 ﻿using System;
-using Dragut_Diana_Lab7.Data;
+using Dragut_Hanc_Mobil.Data;
 using System.IO;
 
-namespace Dragut_Diana_Lab7;
+namespace Dragut_Hanc_Mobil;
 
 public partial class App : Application
 {
